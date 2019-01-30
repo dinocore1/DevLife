@@ -1,5 +1,11 @@
 <?php
 
+function bootstrapstarter_wp_setup() {
+    add_theme_support( 'title-tag' );
+}
+
+add_action( 'after_setup_theme', 'bootstrapstarter_wp_setup' );
+
 function bootstrapstarter_enqueue_styles() {
     wp_register_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );
     $dependencies = array('bootstrap');
