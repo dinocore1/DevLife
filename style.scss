@@ -167,7 +167,5 @@ $theme-colors: (
   text-align: center; 
   margin: 0;
   padding: 75px 0px 10px 0px;
-	
-  /* "transparent" only works here because == rgba(0,0,0,0) */
   background-image: linear-gradient(to bottom, transparent, rgba($dark, 0.5), rgba($dark, 1.0), $dark);
 }
