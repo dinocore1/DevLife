@@ -15,6 +15,7 @@
         <div class="card-text">
             <?php the_content(); ?>
         </div>
+        <p class="read-more"><a href="<?php the_permalink(); ?>">Read More</a></p>
     </div>
 </div>
 

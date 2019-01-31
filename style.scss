@@ -149,3 +149,24 @@ $theme-colors: (
         min-height: 128px;
     }
 }
+
+.card-columns {
+    @include media-breakpoint-up(xl) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(sm) {
+      column-count: 2;
+    }
+  }
+
+.read-more { 
+    position: absolute; 
+  bottom: 0; 
+  left: 0;
+  width: 100%; 
+  text-align: center; 
+  margin: 0; padding: 10px 0; 
+	
+  /* "transparent" only works here because == rgba(0,0,0,0) */
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1.0), black);
+}
