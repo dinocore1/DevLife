@@ -8,7 +8,12 @@ Version: 1.0
 Text Domain: bootstrapstarter
 */
 
-
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1280px
+) !default;
 
 $body-bg: #51565b;
 $body-color: #ccc;
