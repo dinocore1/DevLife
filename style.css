@@ -6541,14 +6541,17 @@ a.text-dark:hover, a.text-dark:focus {
 @media (min-width: 1200px) {
   .section-intro {
     background-image: url("./assets/images/bg_circuit.png"); } }
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .section-intro {
     background-image: url("./assets/images/bg_circuit_lg.png"); } }
-@media (min-width: 768px) and (max-width: 1199.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   .section-intro {
     background-image: url("./assets/images/bg_circuit_md.png"); } }
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .section-intro {
     background-image: url("./assets/images/bg_circuit_sm.png"); } }
+@media (max-width: 575.98px) {
+  .section-intro {
+    min-height: 128px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -114,20 +114,26 @@ $theme-colors: (
     }
 }
 
-@include media-breakpoint-between(lg, xl) {
+@include media-breakpoint-only(lg) {
     .section-intro {
         background-image: url("./assets/images/bg_circuit_lg.png");
     }
 }
 
-@include media-breakpoint-between(md, lg) {
+@include media-breakpoint-only(md) {
     .section-intro {
         background-image: url("./assets/images/bg_circuit_md.png");
     }
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
     .section-intro {
         background-image: url("./assets/images/bg_circuit_sm.png");
+    }
+}
+
+@include media-breakpoint-only(xs) {
+    .section-intro {
+        min-height: 128px;
     }
 }
