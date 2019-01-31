@@ -1,26 +1,26 @@
 <?php get_header(); ?>
-<div class="col-sm-8 blog-main">
- 
- <?php 
- if ( have_posts() ) { 
- while ( have_posts() ) : the_post();
- ?>
- <div class="blog-post">
- <h2 class="blog-post-title"><?php the_title(); ?></h2>
- <p class="blog-post-meta"><?php the_date(); ?> by <?php the_author(); ?></p>
- <?php the_content(); ?>
- </div><!-- /.blog-post -->
- <?php
- endwhile;
- } 
- ?>
 
- <nav>
- <ul class="pager">
- <li><?php next_posts_link('Previous'); ?></li>
- <li><?php previous_posts_link('Next'); ?></li>
- </ul>
- </nav>
+<div class="card-columns">
 
-</div><!-- /.blog-main -->
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+
+
+<div class="card text-white bg-dark mb-3">
+    <div class="card-body">
+        <h2 class="card-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+        <div class="card-text"><small><?php the_time('F jS, Y'); ?></small></div>
+        <div class="card-text">
+            <?php the_content(); ?>
+        </div>
+    </div>
+</div>
+
+
+
+<?php endwhile; endif; ?>
+
+</div>
+
+
 <?php get_footer(); ?>
