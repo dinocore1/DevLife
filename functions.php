@@ -12,10 +12,10 @@ function bootstrapstarter_enqueue_styles() {
     wp_register_style( 'fontawesome', get_template_directory_uri() . '/assets/vendor/fontawesome/css/fontawesome-all.min.css', array(), '5.1.0', 'all' );
 	wp_enqueue_style( 'fontawesome' );
 
-	wp_register_style( 'google-font-roboto', 'https://fonts.googleapis.com/css?family=Roboto:300,400', array(), '1.0', 'all' );
-	wp_enqueue_style( 'google-font-roboto' );
+	wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Krub:300,400,700|Source+Sans+Pro:300,400,700', array(), '1.0', 'all' );
+	wp_enqueue_style( 'google-fonts' );
 
-    wp_enqueue_style( 'bootstrapstarter-style', get_stylesheet_uri(), array() ); 
+    wp_enqueue_style( 'bootstrapstarter-style', get_stylesheet_uri(), array('google-fonts') ); 
 
 }
 

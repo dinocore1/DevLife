@@ -8,6 +8,12 @@ Version: 1.0
 Text Domain: bootstrapstarter
 */
 
+$font-family-base: "Krub" !default;
+$font-family-monospace: "Source Sans Pro", monospace !default;
+$font-size-base: 1.0rem !default;
+$font-weight-base: 700 !default;
+$headings-font-weight: 700 !default;
+
 $container-max-widths: (
         sm: 540px,
         md: 720px,
