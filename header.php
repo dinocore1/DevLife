@@ -10,7 +10,10 @@
 
 <body <?php body_class(); ?> >
 
-<nav class="navbar navbar-dark bg-dark ">
+<div class="container">
+
+<div class="row">
+<nav class="navbar navbar-dark bg-dark w-100">
     <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo( 'name' ); ?></a>
     <div class="search-bar">
         <form id="search-form" class="search" method="get" action="<?php echo esc_url( home_url() ); ?>" role="search" autocomplete="off">
@@ -20,7 +23,7 @@
     </div>
 </nav>
 
-<div class="container">
+</div>
 
 
 

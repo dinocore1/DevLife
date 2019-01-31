@@ -12,7 +12,7 @@ $container-max-widths: (
         sm: 540px,
         md: 720px,
         lg: 960px,
-        xl: 1280px
+        xl: 1700px
 ) !default;
 
 $body-bg: #51565b;
@@ -108,7 +108,8 @@ $theme-colors: (
 
 .section-intro {
     min-height: 256px;
-    background-color: #333;
+    background-color: #181818;
+    margin-bottom: 20px;
 }
 
 /* > 1200px */
