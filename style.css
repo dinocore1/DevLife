@@ -6122,6 +6122,6 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%;
   text-align: center;
   margin: 0;
-  padding: 10px 0;
+  padding: 75px 0px 10px 0px;
   /* "transparent" only works here because == rgba(0,0,0,0) */
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), black, black); }
+  background-image: linear-gradient(to bottom, transparent, rgba(52, 58, 64, 0.5), #343a40, #343a40); }
