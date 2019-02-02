@@ -4,8 +4,10 @@
     <div class="row">
         <?php get_template_part( 'loop' ); ?>
     </div>
-    <div class="row justify-content-md-center">
+    <div class="row">
+        <div class="container">
         <?php get_template_part( 'pagination' ); ?>
+        </div>
     </div>
 </div>
 

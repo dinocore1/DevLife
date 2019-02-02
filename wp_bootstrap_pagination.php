@@ -10,7 +10,7 @@ function wp_bootstrap_pagination( $args = array() ) {
         'custom_query'    => FALSE,
         'previous_string' => __( 'Previous', 'text-domain' ),
         'next_string'     => __( 'Next', 'text-domain' ),
-        'before_output'   => '<nav><ul class="pagination">',
+        'before_output'   => '<nav><ul class="pagination justify-content-center">',
         'after_output'    => '</ul></nav>'
     );
     
