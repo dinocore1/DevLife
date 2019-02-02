@@ -23,7 +23,7 @@ function bootstrapstarter_enqueue_styles() {
 
 function bootstrapstarter_enqueue_scripts() {
 
-    wp_enqueue_script('bootstrap', get_template_directory_uri().'/bootstrap/js/bootstrap.min.js', array('jquery'), '3.3.6', true );
+    wp_enqueue_script('bootstrap', get_template_directory_uri().'/assets/bootstrap/js/bootstrap.min.js', array('jquery'), '3.3.6', true );
     wp_enqueue_script('highlight-js', get_template_directory_uri().'/assets/highlight/highlight.pack.js', array('jquery'), '9.14.2', true );
     wp_enqueue_script('highlight-js-init', get_template_directory_uri().'/assets/js/init-highlight.js', array('highlight-js'), '1.0', true );
 }
