@@ -63,6 +63,7 @@ $theme-colors: (
 @import "bootstrap/scss/carousel";
 @import "bootstrap/scss/utilities";
 @import "bootstrap/scss/print";
+@import "wordpress";
 
 .search-bar {
   width: 300px;
@@ -119,6 +120,11 @@ $theme-colors: (
 
 .bread-crumb {
     background-color: theme-color-level("dark", 0);
+}
+
+.page-content {
+    background-color: theme-color-level("dark", 0);
+    padding-top: 30px;
 }
 
 /* > 1200px */

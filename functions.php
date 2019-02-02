@@ -27,4 +27,8 @@ function bootstrapstarter_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'bootstrapstarter_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'bootstrapstarter_enqueue_scripts' );
 
+
+// Register Custom Navigation Walker
+require_once('wp_bootstrap_pagination.php');
+
 ?>
