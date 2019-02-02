@@ -14,7 +14,7 @@
                             title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
                     <div class="card-text"><small><?php the_time('F jS, Y'); ?></small></div>
                     <div class="card-text">
-                        <?php the_content(); ?>
+                        <?php the_excerpt(); ?>
                     </div>
                     <p class="read-more font-italic"><a href="<?php the_permalink(); ?>">Read More</a></p>
                 </div>

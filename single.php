@@ -3,7 +3,7 @@
 
 
 <div class="row">
-    <div class="col-12 bg-dark">
+    
         <?php
 		// Start the loop.
 		while ( have_posts() ) :
@@ -20,7 +20,7 @@
 		endwhile;
         ?>
 
-    </div>
+
 </div>
 
 

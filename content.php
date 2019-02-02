@@ -1,3 +1,5 @@
+
+<div class="col-12">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
@@ -8,7 +10,8 @@
 			else :
 				the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 			endif;
-			?>
+            ?>
+            <p><small><?php the_time('F jS, Y'); ?></small></p>
     </header><!-- .entry-header -->
 
     <div class="entry-content">
@@ -45,4 +48,6 @@
         <?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
     </footer><!-- .entry-footer -->
 
-</article><!-- #post-## -->
+</article>
+</div>
+<!-- #post-## -->

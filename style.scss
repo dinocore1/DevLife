@@ -117,6 +117,10 @@ $theme-colors: (
   margin-bottom: 20px;
 }
 
+.bread-crumb {
+    background-color: theme-color-level("dark", 0);
+}
+
 /* > 1200px */
 @include media-breakpoint-up(xl) {
   .section-intro {
