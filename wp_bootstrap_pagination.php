@@ -53,11 +53,13 @@ function wp_bootstrap_pagination( $args = array() ) {
     $previous = esc_attr( get_pagenum_link($previous) );
     
     $firstpage = esc_attr( get_pagenum_link(1) );
-    if ( $firstpage && (1 != $page) )
+    if ( $firstpage && (1 != $page) ) {
         $echo .= '<li class="page-item"><a class="page-link" href="' . $firstpage . '">' . __( 'First', 'text-domain' ) . '</a></li>';
+    }
 
-    if ( $previous && (1 != $page) )
-        $echo .= '<li class="page-item"><a class="page-link" href="' . $previous . '" title="' . __( 'previous', 'text-domain') . '">' . $args['previous_string'] . '</a></li>';
+    if ( $previous && (1 != $page) ) {
+        $echo .= '<li class="page-item"><a class="page-link" href="' . $previous . '" aria-label="Previous"><span aria-hidden="true">&laquo;</span><span class="sr-only">' . __( 'Previous', 'text-domain' ) . '</span></a></li>';
+    }
     
     if ( !empty($min) && !empty($max) ) {
         for( $i = $min; $i <= $max; $i++ ) {
@@ -71,14 +73,16 @@ function wp_bootstrap_pagination( $args = array() ) {
     
     $next = intval($page) + 1;
     $next = esc_attr( get_pagenum_link($next) );
-    if ($next && ($count != $page) )
-        $echo .= '<li class="page-item"><a class="page-link" href="' . $next . '" title="' . __( 'next', 'text-domain') . '">' . $args['next_string'] . '</a></li>';
+    if ($next && ($count != $page) ) {
+        $echo .= '<li class="page-item"><a class="page-link" href="' . $next . '" aria-label="Next"><span aria-hidden="true">&raquo;</span><span class="sr-only">' . __( 'Next', 'text-domain' ) . '</span></a></li>';
+    }
     
     $lastpage = esc_attr( get_pagenum_link($count) );
     if ( $lastpage ) {
         $echo .= '<li class="page-item"><a class="page-link" href="' . $lastpage . '">' . __( 'Last', 'text-domain' ) . '</a></li>';
     }
 
-    if ( isset($echo) )
+    if ( isset($echo) ) {
         echo $args['before_output'] . $echo . $args['after_output'];
+    }
 }
