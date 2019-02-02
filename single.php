@@ -2,7 +2,7 @@
 
 
 
-<div class="row page-content">
+<div class="row page-content border border-dark rounded">
     
         <?php
 		// Start the loop.

@@ -8,24 +8,33 @@ Version: 1.0
 Text Domain: bootstrapstarter
 */
 
-$font-family-base: "Krub" !default;
-$font-family-monospace: "Source Sans Pro", monospace !default;
-$font-size-base: 1rem !default;
-$font-weight-base: 700 !default;
+$font-family-base: "Ubuntu", sans-serif, !default;
+$font-family-monospace: "Ubuntu Mono", monospace !default;
+$font-size-base: 1.1rem !default;
+$font-weight-base: 400 !default;
 $headings-font-weight: 700 !default;
 
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1700px
+  xl: 1200px
 ) !default;
 
-$body-bg: #51565b;
+$d1-color: #2d2f32;
+$d2-color: #43474b;
+$d3-color: #51565b;
+
+//$body-bg: #51565b;
+$body-bg: $d2-color;
 $body-color: #ccc;
 
+//#009e60
+//#2a2d2e
+
 $theme-colors: (
-  "primary": #860111
+  "primary": #6a9955,
+  "secondary": #b5b267
 );
 
 @import "bootstrap/scss/functions";
@@ -123,7 +132,9 @@ $theme-colors: (
 }
 
 .page-content {
-    background-color: theme-color-level("dark", 0);
+    //background-color: $d1-color;
+    //background-color: #2b3137;
+    background-color: $dark;
     padding-top: 30px;
 }
 

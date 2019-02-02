@@ -6,8 +6,8 @@
 
             <div class="card text-white bg-dark mb-3">
                 <div class="card-body">
-                    <h2 class="card-title"><a href="<?php the_permalink(); ?>" rel="bookmark"
-                            title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+                    <h3 class="card-title"><a href="<?php the_permalink(); ?>" rel="bookmark"
+                            title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
                     <div class="card-text"><small><?php the_time('F jS, Y'); ?></small></div>
                     <div class="card-text">
                         <?php the_excerpt(); ?>
