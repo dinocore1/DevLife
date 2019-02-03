@@ -1,4 +1,4 @@
-<div class="card-columns">
+<div class="card-columns w-100">
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
